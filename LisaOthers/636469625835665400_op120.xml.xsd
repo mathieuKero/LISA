@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="root" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="root" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="operation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="code" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+              <xs:element name="title" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+              <xs:element name="startDate" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:simpleContent msdata:ColumnName="startDate_Text" msdata:Ordinal="1">
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="type" type="xs:string" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="endDate" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:simpleContent msdata:ColumnName="endDate_Text" msdata:Ordinal="1">
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="type" type="xs:string" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="catalog" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="type" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+                    <xs:element name="label" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+                    <xs:element name="speed" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+                    <xs:element name="catalogWidth" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:simpleContent msdata:ColumnName="catalogWidth_Text" msdata:Ordinal="1">
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="type" type="xs:string" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="catalogHeight" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:simpleContent msdata:ColumnName="catalogHeight_Text" msdata:Ordinal="1">
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="type" type="xs:string" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="pages" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="page" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="number" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:simpleContent msdata:ColumnName="number_Text" msdata:Ordinal="1">
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute name="type" type="xs:string" />
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="products" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="product" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="code" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+                                            <xs:element name="label" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+                                            <xs:element name="description" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+                                            <xs:element name="category" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+                                            <xs:element name="image" type="xs:string" minOccurs="0" msdata:Ordinal="5" />
+                                            <xs:element name="picto" type="xs:string" minOccurs="0" msdata:Ordinal="6" />
+                                            <xs:element name="origin" type="xs:string" minOccurs="0" msdata:Ordinal="7" />
+                                            <xs:element name="mention" type="xs:string" minOccurs="0" msdata:Ordinal="8" />
+                                            <xs:element name="packaging" type="xs:string" minOccurs="0" msdata:Ordinal="9" />
+                                            <xs:element name="color" type="xs:string" minOccurs="0" msdata:Ordinal="10" />
+                                            <xs:element name="start_validity_date" type="xs:string" minOccurs="0" msdata:Ordinal="11" />
+                                            <xs:element name="end_validity_date" type="xs:string" minOccurs="0" msdata:Ordinal="12" />
+                                            <xs:element name="price" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                                              <xs:complexType>
+                                                <xs:simpleContent msdata:ColumnName="price_Text" msdata:Ordinal="1">
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute name="type" type="xs:string" />
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="price_before_coupon" minOccurs="0" maxOccurs="unbounded">
+                                              <xs:complexType>
+                                                <xs:attribute name="type" type="xs:string" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="price_crossed" minOccurs="0" maxOccurs="unbounded">
+                                              <xs:complexType>
+                                                <xs:attribute name="type" type="xs:string" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="Reduction_euro" minOccurs="0" maxOccurs="unbounded">
+                                              <xs:complexType>
+                                                <xs:attribute name="type" type="xs:string" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="Reduction_percent" minOccurs="0" maxOccurs="unbounded">
+                                              <xs:complexType>
+                                                <xs:attribute name="type" type="xs:string" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="Avantage_euro" minOccurs="0" maxOccurs="unbounded">
+                                              <xs:complexType>
+                                                <xs:attribute name="type" type="xs:string" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="Avantage_percent" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                                              <xs:complexType>
+                                                <xs:simpleContent msdata:ColumnName="Avantage_percent_Text" msdata:Ordinal="1">
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute name="type" type="xs:string" />
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="ecotaxe" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                                              <xs:complexType>
+                                                <xs:simpleContent msdata:ColumnName="ecotaxe_Text" msdata:Ordinal="1">
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute name="type" type="xs:string" />
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="lowerprice" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                                              <xs:complexType>
+                                                <xs:simpleContent msdata:ColumnName="lowerprice_Text" msdata:Ordinal="1">
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute name="type" type="xs:string" />
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="zones" minOccurs="0" maxOccurs="unbounded">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="zone" minOccurs="0" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="coordx" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                                                          <xs:complexType>
+                                                            <xs:simpleContent msdata:ColumnName="coordx_Text" msdata:Ordinal="1">
+                                                              <xs:extension base="xs:string">
+                                                                <xs:attribute name="type" type="xs:string" />
+                                                              </xs:extension>
+                                                            </xs:simpleContent>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="coordy" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                                                          <xs:complexType>
+                                                            <xs:simpleContent msdata:ColumnName="coordy_Text" msdata:Ordinal="1">
+                                                              <xs:extension base="xs:string">
+                                                                <xs:attribute name="type" type="xs:string" />
+                                                              </xs:extension>
+                                                            </xs:simpleContent>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="width" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                                                          <xs:complexType>
+                                                            <xs:simpleContent msdata:ColumnName="width_Text" msdata:Ordinal="1">
+                                                              <xs:extension base="xs:string">
+                                                                <xs:attribute name="type" type="xs:string" />
+                                                              </xs:extension>
+                                                            </xs:simpleContent>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:element name="height" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                                                          <xs:complexType>
+                                                            <xs:simpleContent msdata:ColumnName="height_Text" msdata:Ordinal="1">
+                                                              <xs:extension base="xs:string">
+                                                                <xs:attribute name="type" type="xs:string" />
+                                                              </xs:extension>
+                                                            </xs:simpleContent>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                      <xs:attribute name="type" type="xs:string" />
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="id" type="xs:string" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="id" type="xs:string" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="shops" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="shop" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="startDate" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+                                <xs:element name="displayStartDate" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xs:element name="displayEndDate" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+                              </xs:sequence>
+                              <xs:attribute name="id" type="xs:string" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

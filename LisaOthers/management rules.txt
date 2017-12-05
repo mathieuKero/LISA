@@ -1,0 +1,4 @@
+Une opération a 1 ou plusieurs catalogue
+Un catalogue a 1 ou plusieurs page
+Une page a 1 ou plusieur prouduit
+Une opération concerne 1 ou plusieurs magasins

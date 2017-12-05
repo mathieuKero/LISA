@@ -1,0 +1,57 @@
+OPERATION
+    int ID
+    string Code
+    string Title
+    datetime StartDate
+    datetime EndDate
+
+OPERATIONCATALOG
+    int IDOperation
+    int IDCatalog
+
+OPERATIONSHOP
+    int IDOperation
+    int IDShop
+
+CATALOG
+    int ID
+    string Type
+    string Label
+    string Speed
+    int Width
+    int Height
+
+PAGE
+    int ID
+    int Number
+    int IDCatalog
+
+PAGEPRODUCT
+    int IDPage
+    int IDProduct
+
+PRODUCT
+    int ID
+    string Code
+    string Label
+    string Description
+    string Category
+    double Price
+    double Ecotaxe
+    string ImagePath
+    string PictoPath
+    string Origin
+    string Mention
+    double LowerPrice
+    string Color
+
+SHOP
+    int ID
+    datetime DisplayStartDate
+    datetime DisplayEndDate
+
+TECHNICIAN
+    int ID
+    string Login
+    string Password
+
