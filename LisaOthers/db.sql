@@ -82,3 +82,12 @@ CREATE TABLE OperationShop(
     FOREIGN KEY fk_operationshop_operation (IDOperation) REFERENCES Operation(ID),
     FOREIGN KEY fk_operationshop_shop (IDShop) REFERENCES Shop(ID)
 )ENGINE=INNODB;
+
+CREATE TABLE users(
+    id INT NOT NULL AUTO_INCREMENT, 
+    name VARCHAR(200) NOT NULL,
+    password VARCHAR(200) NOT NULL,
+    apikey VARCHAR(200) NOT NULL,
+    username VARCHAR(200) NOT NULL,
+    PRIMARY KEY(id)
+)ENGINE = INNODB; 
